@@ -165,7 +165,8 @@ body {
 
 .menu-link,
 .auth-link {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 31px;
 
@@ -191,6 +192,12 @@ body {
 
 .current {
   color: var(--accent-color);
+}
+
+.auth-link-icon {
+  margin-right: 10px;
+
+  fill: currentColor;
 }
 
 /* =========================== HERO =========================== */
