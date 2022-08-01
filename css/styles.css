@@ -11,6 +11,7 @@
 
   --bg-color-theme-dark: #2f303a;
   --secondary-bg-color: #f5f4fa;
+  --hero-bg-color: #c4c4c4;
   --primary-border-color: #eeeeee;
   --secondary-border-color: #ececec;
 
@@ -195,10 +196,20 @@ body {
 /* =========================== HERO =========================== */
 
 .hero {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 200px;
   padding-bottom: 200px;
+
   text-align: center;
-  background-color: var(--bg-color-theme-dark);
+
+  background-color: var(--hero-bg-color);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/hero/bg-img.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .page-title {
