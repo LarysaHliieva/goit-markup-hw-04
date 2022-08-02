@@ -9,6 +9,7 @@
   --black-color: #000000;
   --accent-color: #2196f3;
   --icon-color: #afb1b8;
+  --icon-bg-color-theme-dark: rgba(255, 255, 255, 0.1);
 
   --bg-color-theme-dark: #2f303a;
   --secondary-bg-color: #f5f4fa;
@@ -131,6 +132,48 @@ body {
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+/* SOCIAL-LIST */
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+
+  border-radius: 50%;
+}
+
+.social-list-link-theme-light {
+  color: var(--icon-color);
+  background-color: var(--white-color);
+}
+
+.social-list-link-theme-dark {
+  color: var(--white-color);
+  background-color: var(--icon-bg-color-theme-dark);
+}
+
+.social-list-link:hover,
+.social-list-link:focus {
+  background-color: var(--accent-color);
+}
+
+.social-list-icon {
+  fill: currentColor;
+}
+
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon {
+  fill: var(--white-color);
 }
 
 /* =========================== HEADER =========================== */
@@ -329,37 +372,6 @@ body {
   color: var(--secondary-text-color);
 }
 
-.social-list {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
-
-.social-list-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
-
-  background-color: var(--white-color);
-  border-radius: 50%;
-}
-
-.social-list-link:hover,
-.social-list-link:focus {
-  background-color: var(--accent-color);
-}
-
-.social-list-icon {
-  fill: var(--icon-color);
-}
-
-.social-list-link:hover .social-list-icon,
-.social-list-link:focus .social-list-icon {
-  fill: var(--white-color);
-}
-
 /* =========================== CLIENTS =========================== */
 
 .client-list {
@@ -403,6 +415,14 @@ body {
   background-color: var(--bg-color-theme-dark);
 }
 
+.footer-container {
+  display: flex;
+}
+
+.adress-block {
+  margin-right: 70px;
+}
+
 .footer-logo {
   margin-bottom: 20px;
 
@@ -432,6 +452,21 @@ body {
 .contact:hover,
 .contact:focus {
   color: var(--accent-color);
+}
+
+.social-block {
+  padding-top: 12px;
+}
+
+.footer-caption {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--white-color);
 }
 
 /* =========================== OUR WORKS ===========================*/
